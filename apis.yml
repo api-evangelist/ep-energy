@@ -23,6 +23,8 @@ position: Provider
 access: None
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/ep-energy
   - type: Website
     url: https://www.ep-energy.com
 maintainers:
