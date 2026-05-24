@@ -27,6 +27,8 @@ common:
     url: https://www.linkedin.com/company/ep-energy
   - type: Website
     url: https://www.ep-energy.com
+  - type: LLMsTxt
+    url: https://ep-energy.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
