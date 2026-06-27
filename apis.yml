@@ -28,7 +28,7 @@ common:
     url: https://www.linkedin.com/company/ep-energy
   - type: Website
     url: https://www.ep-energy.com
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://ep-energy.com/llms.txt
 maintainers:
   - FN: Kin Lane
