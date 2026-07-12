@@ -24,6 +24,8 @@ position: Provider
 access: None
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/ep-energy-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/ep-energy
   - type: Website
