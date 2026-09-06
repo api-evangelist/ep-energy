@@ -1,59 +1,87 @@
 aid: ep-energy
 name: EP Energy
 description: >-
-  EP Energy Corporation was an independent exploration and production company
-  engaged in the acquisition and development of unconventional onshore oil
-  and natural gas properties in the United States. EP Energy filed for Chapter
-  11 bankruptcy in October 2019 and emerged in October 2020, with assets
-  later acquired by IKAV in March 2022. The company does not maintain any
-  public APIs, SDKs, or developer resources.
+  EP Energy Corporation was an independent exploration and production company engaged in
+  the acquisition and development of unconventional onshore oil and natural gas properties
+  in the United States, principally in the Eagle Ford shale and the Uinta basin. The company
+  filed for Chapter 11 bankruptcy in October 2019 and emerged in October 2020. Verdun Oil
+  Company II LLC, an EnCap Investments portfolio company, completed its acquisition of EP
+  Energy on 30 March 2022 for approximately $1.45 billion, with the Utah/Uinta assets
+  divested post-closing under an FTC order. EP Energy is no longer an operating company.
+  It never published an API, SDK, or developer program, and its corporate domain
+  epenergy.com now redirects to the acquirer, verdunoilco.com. The unrelated hyphenated
+  domain ep-energy.com is a GoDaddy aftermarket listing offered for sale and is not an
+  EP Energy surface.
 type: Index
 deliveryModel:
-  model: unknown
+  model: none
   open_source: false
   commercial: false
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: No delivery model — the company is defunct and ships no API product
+  confidence: high
   source:
-  - none
-  generated: '2026-08-28'
-  method: derived
+  - well-known/ep-energy-well-known.yml
+  generated: '2026-09-06'
+  method: probed
 accessModel:
-  pricing: unknown
-  onboarding: unknown
+  pricing: none
+  onboarding: none
   trial: false
   try_now: false
   public: false
-  label: Unknown
-  confidence: low
-  source: []
-  generated: '2026-07-22'
-  method: derived
+  label: No developer access — no API, portal, or sign-up exists
+  confidence: high
+  source:
+  - well-known/ep-energy-well-known.yml
+  generated: '2026-09-06'
+  method: probed
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ep-energy.png
 tags:
   - Energy
   - Oil and Gas
+  - Exploration and Production
   - Defunct
+  - Acquired
   - Bankruptcy
   - Fortune 1000
 url: >-
   https://raw.githubusercontent.com/api-evangelist/ep-energy/refs/heads/main/apis.yml
 created: '2024-07-02'
-modified: '2026-04-28'
+modified: '2026-09-06'
 specificationVersion: '0.23'
 position: Producing
 access: None
 apis: []
 common:
-  - type: DomainSecurity
-    url: security/ep-energy-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/ep-energy
-  - type: Website
-    url: https://www.ep-energy.com
-  - type: LlmsText
-    url: https://ep-energy.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-06'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    EP Energy Corporation ceased to exist as an operating company when Verdun Oil Company II
+    LLC completed its acquisition on 2022-03-30; its corporate domain epenergy.com now 301s
+    to verdunoilco.com, and the hyphenated ep-energy.com this record previously pointed at is
+    a GoDaddy domain-for-sale lander that answers HTTP 200 with the same 114-byte HTML shell
+    for every path, including /openapi.json and /.well-known/agent-card.json.
+  evidence:
+    - url: https://epenergy.com/
+      status: 200
+    - url: https://ep-energy.com/openapi.json
+      status: 200
+    - url: https://ep-energy.com/llms.txt
+      status: 200
+    - url: https://epenergy.com/llms.txt
+      status: 404
+    - url: https://api.github.com/orgs/epenergy
+      status: 404
+  checked: '2026-09-06'
