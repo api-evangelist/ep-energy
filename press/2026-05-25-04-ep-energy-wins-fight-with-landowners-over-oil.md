@@ -1,7 +1,9 @@
 ---
 title: EP Energy Wins Fight With Landowners Over Oil ...
 url: https://news.bloomberglaw.com/bankruptcy-law/ep-energy-wins-fight-with-landowners-over-oil-production-pause
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"EP Energy" press release artificial intelligence'
 position: 4
 source: serpapi-google
